@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrasi</title>
+  <link rel="stylesheet" href="css/registrasi.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h3 class="heading">Registrasi user</h3>
+    <p class="description"></p>
+    <form id="form">
+      <div class="form-control">
+        <label for="name">Nama Lengkap</label>
+        <input type="text" name="name" id="name" placeholder="nama anda" />
+      </div>
+      <div class="form-control">
+        <label for="email">Email</label>
+        <i class="far fa-envelope"></i>
+        <input type="email" name="email" id="email" placeholder="masukkan email anda" />
+      </div>
+      <div class="form-control">
+        <label for="username">username</label>
+        <input type="text" name="username" id="username" placeholder="username" />
+        <div class="form-control">
+          <label for="password">password</label>
+          <input type="password" name="password" id="password" placeholder="password" />
+          <div class="form-control">
+            <label for="cek_password">cek password</label>
+            <input type="password" name="cek_password" id="cek_password" placeholder="cek ulang password" />
+          </div>
+          <button value="submit" class="submit-button" type="submit" id="submit" onclick="validasi()">Daftar</button>
+        </div>
+    </form>
+  </div>
+  <script src="js/registrasi.js"></script>
+</body>
+
+</html>
