@@ -7,7 +7,7 @@ function validasi() {
 
   if (name != "" && email!="" && username !="" && password !="" && password2 == password){
     alert("anda berhasil registrasi");
-    form.setAttribute("action", "dataMasjid.html");
+    form.setAttribute("action", "adminDaftarMasjid.html");
   }
   else{
     alert('Anda harus mengisi data dengan lengkap & benar!');

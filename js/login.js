@@ -4,7 +4,7 @@ function checkform(){
     
     if(username == "admin" && password == "admin"){
         alert("Login Berhasil");
-        form.setAttribute("action", "dataMasjid.html");
+        form.setAttribute("action", "adminDaftarMasjid.html");
     }
     else if(username == "" && password == ""){
         alert("Tolong Isi Username & Password Anda!");
