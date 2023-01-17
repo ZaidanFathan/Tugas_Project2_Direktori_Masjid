@@ -1,0 +1,17 @@
+let Table = document.getElementById;
+let NamaMasjid = sessionStorage.getItem("NamaMasjid");
+let Kecamatan = sessionStorage.getItem("Kecamatan");
+let Kelurahan = sessionStorage.getItem("Kelurahan");
+let Deskripsi = sessionStorage.getItem("Deskripsi");
+let Pengurus = sessionStorage.getItem("Pengurus");
+let Email = sessionStorage.getItem("email");
+let AlamatWeb = sessionStorage.getItem("AlamatWeb");
+let latitude_longitude = sessionStorage.getItem("latitude_longitude");
+console.log(NamaMasjid);
+console.log(Kecamatan);
+console.log(Kelurahan);
+console.log(Deskripsi);
+console.log(Pengurus);
+console.log(Email);
+console.log(AlamatWeb);
+console.log(latitude_longitude);
