@@ -1,4 +1,3 @@
-let Table = document.getElementById;
 let NamaMasjid = sessionStorage.getItem("NamaMasjid");
 let Kecamatan = sessionStorage.getItem("Kecamatan");
 let Kelurahan = sessionStorage.getItem("Kelurahan");
