@@ -1,313 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin - Kelola Masjid</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin - Kelola Masjid</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+    <!-- Ionicons -->
+    <link
+      rel="stylesheet"
+      href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link
+      rel="stylesheet"
+      href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css"
+    />
+    <!-- iCheck -->
+    <link
+      rel="stylesheet"
+      href="plugins/icheck-bootstrap/icheck-bootstrap.min.css"
+    />
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+    <!-- overlayScrollbars -->
+    <link
+      rel="stylesheet"
+      href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css"
+    />
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css" />
+    <!-- summernote -->
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css" />
+  </head>
 
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
-  <!-- Ionicons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- Tempusdominus Bootstrap 4 -->
-  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-  <!-- iCheck -->
-  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-  <!-- JQVMap -->
-  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/adminlte.min.css">
-  <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
-  <!-- summernote -->
-  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
-</head>
-
-<body>
-  <div class="wrapper">
-
-    <!-- Preloader -->
-    <!-- <div class="preloader flex-column justify-content-center align-items-center">
+  <body>
+    <div class="wrapper">
+      <!-- Preloader -->
+      <!-- <div class="preloader flex-column justify-content-center align-items-center">
       <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
     </div> -->
 
-    <!-- Navbar -->
-    <nav class="main-header navbar navbar-expand">
-      <!-- Left navbar links -->
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-        </li>
-      </ul>
-    </nav>
-    <!-- /.navbar -->
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand">
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"
+              ><i class="fas fa-bars"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.navbar -->
 
-    <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4">
-      <!-- Brand Logo -->
-      <a href="#" class="brand-link">
-        <img src="dist/img/islamic-logo-mosque-vector.jpg" alt="Masjid Logo" class="brand-image img-circle elevation-3"
-          style="opacity: .8">
-        <span class="brand-text font-weight-light">Halaman Admin</span>
-      </a>
+      <!-- Main Sidebar Container -->
+      <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="#" class="brand-link">
+          <img
+            src="dist/img/islamic-logo-mosque-vector.jpg"
+            alt="Masjid Logo"
+            class="brand-image img-circle elevation-3"
+            style="opacity: 0.8"
+          />
+          <span class="brand-text font-weight-light">Halaman Admin</span>
+        </a>
 
-      <!-- Sidebar -->
-      <div class="sidebar">
-        <!-- Sidebar user panel (optional) -->
-        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-          <div class="image">
-            <img src="dist/img/profile.png" class="img-circle elevation-2" alt="User Image">
-          </div>
-          <div class="info">
-            <a href="#" class="d-block">Muhammad Hilmy</a>
-          </div>
-        </div>
-
-        <!-- SidebarSearch Form -->
-        <div class="form-inline">
-          <div class="input-group" data-widget="sidebar-search">
-            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-            <div class="input-group-append">
-              <button class="btn btn-sidebar">
-                <i class="fas fa-search fa-fw"></i>
-              </button>
+        <!-- Sidebar -->
+        <div class="sidebar">
+          <!-- Sidebar user panel (optional) -->
+          <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+              <img
+                src="dist/img/profile.png"
+                class="img-circle elevation-2"
+                alt="User Image"
+              />
+            </div>
+            <div class="info">
+              <a href="#" class="d-block">Muhammad Hilmy</a>
             </div>
           </div>
-        </div>
 
-        <!-- Sidebar Menu -->
-        <nav class="mt-2">
-          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <li class="nav-item">
-              <a href="#" class="nav-link active">
-                <i class="fas fa-mosque"></i>
-                <p>
-                  Masjid
-                </p>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a href="admin-berita.html" class="nav-link">
-                <i class="fas fa-newspaper"></i>
-                <p>
-                  Berita
-                </p>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a href="slide1.html" class="nav-link">
-                <i class="fas fa-sign-out-alt"></i>
-                <p>
-                  Logout
-                </p>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <!-- /.sidebar-menu -->
-      </div>
-      <!-- /.sidebar -->
-    </aside>
-
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-      <!-- Content Header (Page header) -->
-      <div class="content-header">
-        <div class="container-fluid">
-          <div class="row mb-2">
-            <div class="px-5 col-sm-12">
-              <h1 class="m-0">Admin - Direktori Data Masjid Kota Depok</h1>
-            </div><!-- /.col -->
-            <div class="col-sm-12">
-              <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb">
-                  <div class="input-group" data-widget="sidebar-search">
-                    <input class="form-control form-control-sidebar" type="search" placeholder="Search"
-                      aria-label="Search">
-                    <div class="input-group-append">
-                      <button class="btn btn-sidebar">
-                        <i class="fas fa-search fa-fw"></i>
-                      </button>
-                    </div>
-                  </div>
-                </li>
-                <li class="breadcrumb-item"><a href="login.html">Login</a></li>
-              </ol>
-            </div><!-- /.col -->
-          </div><!-- /.row -->
-        </div><!-- /.container-fluid -->
-      </div>
-      <!-- /.content-header -->
-
-      <!-- Main content -->
-      <section class="content">
-        <div class="container-fluid">
-          <!-- Small boxes (Stat box) -->
-
-          <!-- /.row -->
-          <!-- Main row -->
-          <div class="container bg-white">
-            <div class="row">
-              <div class="pt-2 px-5 col-md-6">
-                <h3>Daftar Masjid</h3>
+          <!-- SidebarSearch Form -->
+          <div class="form-inline">
+            <div class="input-group" data-widget="sidebar-search">
+              <input
+                class="form-control form-control-sidebar"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-sidebar">
+                  <i class="fas fa-search fa-fw"></i>
+                </button>
               </div>
-              <div class="col-md-6">
-                <ol class="breadcrumb float-sm-right bg-white">
-                  <li class="breadcrumb-item"><a href="slide1.html">Home</a></li>
-                  <li class="breadcrumb-item"><a href="#">Admin</a></li>
-                  <li class="breadcrumb-item active">Kelola Masjid</li>
+            </div>
+          </div>
+
+          <!-- Sidebar Menu -->
+          <nav class="mt-2">
+            <ul
+              class="nav nav-pills nav-sidebar flex-column"
+              data-widget="treeview"
+              role="menu"
+              data-accordion="false"
+            >
+              <li class="nav-item">
+                <a href="#" class="nav-link active">
+                  <i class="fas fa-mosque"></i>
+                  <p>Masjid</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="admin-berita.html" class="nav-link">
+                  <i class="fas fa-newspaper"></i>
+                  <p>Berita</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="slide1.html" class="nav-link">
+                  <i class="fas fa-sign-out-alt"></i>
+                  <p>Logout</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="px-5 col-sm-12">
+                <h1 class="m-0">Admin - Direktori Data Masjid Kota Depok</h1>
+              </div>
+              <!-- /.col -->
+              <div class="col-sm-12">
+                <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb">
+                    <div class="input-group" data-widget="sidebar-search">
+                      <input
+                        class="form-control form-control-sidebar"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                      />
+                      <div class="input-group-append">
+                        <button class="btn btn-sidebar">
+                          <i class="fas fa-search fa-fw"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="login.html">Login</a>
+                  </li>
                 </ol>
               </div>
+              <!-- /.col -->
             </div>
-            <div class="px-3 row">
-              <br>
-              <p><a href="admin_tambah_masjid.html"><button type="button" class="btn btn-secondary">Tambah</button></a></p>
-            </div>
-            <div class="row px-2">
-              <div class="col-md-12">
-                <table class="table table-hover table-primary">
-                  <thead>
-                    <tr class="bg-dark">
-                      <th scope="col">No</th>
-                      <th scope="col">Nama Masjid</th>
-                      <th scope="col">Kecamatan</th>
-                      <th scope="col">Kelurahan</th>
-                      <th scope="col">Ketua DKM</th>
-                      <th scope="col">Telepon</th>
-                      <th scope="col">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Masjid Kubah Emas</td>
-                      <td>Limo</td>
-                      <td>Meruyung</td>
-                      <td></td>
-                      <td><a href="02198283309">021-98283309</a></td>
-                      <td>
-                        <i class="far fa-eye mr-3"></i>
-                        <i class="far fa-edit mr-3"></i>
-                        <i class="far fa-trash-alt"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Masjid Baitul Kamal</td>
-                      <td>Pancoran Mas</td>
-                      <td></td>
-                      <td></td>
-                      <td><a href="081311241186">0813-1124-1186</a></td>
-                      <td>
-                        <i class="far fa-eye mr-3"></i>
-                        <i class="far fa-edit mr-3"></i>
-                        <i class="far fa-trash-alt"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Masjid Al-Mukhlashiin</td>
-                      <td>Sawangan</td>
-                      <td>Sawangan Lama</td>
-                      <td></td>
-                      <td></td>
-                      <td>
-                        <i class="far fa-eye mr-3"></i>
-                        <i class="far fa-edit mr-3"></i>
-                        <i class="far fa-trash-alt"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>Masjid Al-Qodar</td>
-                      <td>Beji</td>
-                      <td>Tanah Baru</td>
-                      <td></td>
-                      <td></td>
-                      <td>
-                        <i class="far fa-eye mr-3"></i>
-                        <i class="far fa-edit mr-3"></i>
-                        <i class="far fa-trash-alt"></i>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">5</th>
-                      <td>Masjid At-Thohir</td>
-                      <td>Tapos</td>
-                      <td>Tapos</td>
-                      <td>Rahmatullah</td>
-                      <td><a href="0882000666460">0882-0006-66460</a></td>
-                      <td>
-                        <i class="far fa-eye mr-3"></i>
-                        <i class="far fa-edit mr-3"></i>
-                        <i class="far fa-trash-alt"></i>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+            <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="container-fluid">
+            <!-- Small boxes (Stat box) -->
+
+            <!-- /.row -->
+            <!-- Main row -->
+            <div class="container bg-white">
+              <div class="row">
+                <div class="pt-2 px-5 col-md-6">
+                  <h3>Daftar Masjid</h3>
+                </div>
+                <div class="col-md-6">
+                  <ol class="breadcrumb float-sm-right bg-white">
+                    <li class="breadcrumb-item">
+                      <a href="slide1.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="#">Admin</a></li>
+                    <li class="breadcrumb-item active">Kelola Masjid</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="px-3 row">
+                <br />
+                <p>
+                  <a href="admin_tambah_masjid.html"
+                    ><button type="button" class="btn btn-secondary">
+                      Tambah
+                    </button></a
+                  >
+                </p>
+              </div>
+              <div class="row px-2">
+                <div class="col-md-12">
+                  <table class="table table-hover table-primary">
+                    <thead>
+                      <tr class="bg-dark">
+                        <th scope="col">No</th>
+                        <th scope="col">Nama Masjid</th>
+                        <th scope="col">Kecamatan</th>
+                        <th scope="col">Kelurahan</th>
+                        <th scope="col">Ketua DKM</th>
+                        <th scope="col">Telepon</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Masjid Kubah Emas</td>
+                        <td>Limo</td>
+                        <td>Meruyung</td>
+                        <td></td>
+                        <td><a href="02198283309">021-98283309</a></td>
+                        <td>
+                          <i class="far fa-eye mr-3"></i>
+                          <i class="far fa-edit mr-3"></i>
+                          <i class="far fa-trash-alt"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Masjid Baitul Kamal</td>
+                        <td>Pancoran Mas</td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="081311241186">0813-1124-1186</a></td>
+                        <td>
+                          <i class="far fa-eye mr-3"></i>
+                          <i class="far fa-edit mr-3"></i>
+                          <i class="far fa-trash-alt"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Masjid Al-Mukhlashiin</td>
+                        <td>Sawangan</td>
+                        <td>Sawangan Lama</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                          <i class="far fa-eye mr-3"></i>
+                          <i class="far fa-edit mr-3"></i>
+                          <i class="far fa-trash-alt"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Masjid Al-Qodar</td>
+                        <td>Beji</td>
+                        <td>Tanah Baru</td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                          <i class="far fa-eye mr-3"></i>
+                          <i class="far fa-edit mr-3"></i>
+                          <i class="far fa-trash-alt"></i>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Masjid At-Thohir</td>
+                        <td>Tapos</td>
+                        <td>Tapos</td>
+                        <td>Rahmatullah</td>
+                        <td><a href="0882000666460">0882-0006-66460</a></td>
+                        <td>
+                          <i class="far fa-eye mr-3"></i>
+                          <i class="far fa-edit mr-3"></i>
+                          <i class="far fa-trash-alt"></i>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
+            <!-- /.row (main row) -->
           </div>
-          <!-- /.row (main row) -->
-        </div><!-- /.container-fluid -->
-      </section>
-      <!-- /.content -->
+          <!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+      </div>
+      <!-- /.content-wrapper -->
+      <footer class="main-footer">
+        <strong>Develop By Muhammad Hilmy TI09 @STT-NF 2022</strong>
+      </footer>
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+      </aside>
+      <!-- /.control-sidebar -->
     </div>
-    <!-- /.content-wrapper -->
-    <footer class="main-footer">
-      <strong>Develop By Muhammad Hilmy TI09 @STT-NF 2022</strong>
-    </footer>
+    <!-- ./wrapper -->
 
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-      <!-- Control sidebar content goes here -->
-    </aside>
-    <!-- /.control-sidebar -->
-  </div>
-  <!-- ./wrapper -->
-
-  <!-- jQuery -->
-  <script src="plugins/jquery/jquery.min.js"></script>
-  <!-- jQuery UI 1.11.4 -->
-  <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
-  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-  <script>
-    $.widget.bridge('uibutton', $.ui.button)
-  </script>
-  <!-- Bootstrap 4 -->
-  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- ChartJS -->
-  <script src="plugins/chart.js/Chart.min.js"></script>
-  <!-- Sparkline -->
-  <script src="plugins/sparklines/sparkline.js"></script>
-  <!-- JQVMap -->
-  <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
-  <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-  <!-- jQuery Knob Chart -->
-  <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
-  <!-- daterangepicker -->
-  <script src="plugins/moment/moment.min.js"></script>
-  <script src="plugins/daterangepicker/daterangepicker.js"></script>
-  <!-- Tempusdominus Bootstrap 4 -->
-  <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-  <!-- Summernote -->
-  <script src="plugins/summernote/summernote-bs4.min.js"></script>
-  <!-- overlayScrollbars -->
-  <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-  <!-- AdminLTE App -->
-  <script src="dist/js/adminlte.js"></script>
-  <!-- AdminLTE for demo purposes -->
-  <!-- <script src="dist/js/demo.js"></script> -->
-  <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-  <script src="dist/js/pages/dashboard.js"></script>
-</body>
-
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+      $.widget.bridge("uibutton", $.ui.button);
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="plugins/moment/moment.min.js"></script>
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <!-- <script src="dist/js/demo.js"></script> -->
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/dashboard.js"></script>
+    <script src="dist/js/addValue2.js"></script>
+  </body>
 </html>

@@ -82,6 +82,7 @@ function Daftar(event) {
 
     if (ValidationEmail(email.value)) {
       hasil.forEach((element) => {
+        sessionStorage.setItem(element.id, element.value);
         const p = document.createElement("p");
         const text = document.createTextNode(
           `${element.id} : ${element.value}`
